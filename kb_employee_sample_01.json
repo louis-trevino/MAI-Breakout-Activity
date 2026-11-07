@@ -1,0 +1,366 @@
+[
+  {
+    "content": "To request a vacation, login to the employee portal and submit a request, adding your manager as an approver.",
+    "metadata": {
+      "ticket_id": "TKT-00002",
+      "doc_type": "knowledge_base",
+      "category": "vacations",
+      "priority": "P2",
+      "status": "pending",
+      "title": "How to request a vacation",
+      "language": "en",
+      "created_date": "2026-09-14T09:42:10Z",
+      "updated_date": "2026-09-15T16:05:33Z"
+    }
+  },
+  {
+    "content": "Full-time employees accrue 1.25 vacation days per month (15 days per year). Up to 5 unused days can be carried over into the next calendar year; any balance above that expires on January 31. Check your current balance under 'Time Off' in the employee portal.",
+    "metadata": {
+      "ticket_id": "TKT-00003",
+      "doc_type": "knowledge_base",
+      "category": "vacations",
+      "priority": "P3",
+      "status": "published",
+      "title": "Vacation accrual and carryover policy",
+      "language": "en",
+      "created_date": "2026-01-08T10:15:00Z",
+      "updated_date": "2026-03-02T14:20:45Z"
+    }
+  },
+  {
+    "content": "If you are unwell, notify your manager before the start of your shift via Slack or phone, then log a sick day in the employee portal within 24 hours. Absences longer than 3 consecutive days require a doctor's note uploaded to the portal.",
+    "metadata": {
+      "ticket_id": "TKT-00004",
+      "doc_type": "knowledge_base",
+      "category": "sick_leave",
+      "priority": "P2",
+      "status": "published",
+      "title": "How to report a sick day",
+      "language": "en",
+      "created_date": "2026-01-12T08:30:22Z",
+      "updated_date": "2026-01-12T08:30:22Z"
+    }
+  },
+  {
+    "content": "Payroll runs bi-weekly on Fridays. If a payday falls on a public holiday, funds are deposited the previous business day. Pay stubs are available under 'Payroll > Pay Statements' in the employee portal.",
+    "metadata": {
+      "ticket_id": "TKT-00005",
+      "doc_type": "knowledge_base",
+      "category": "payroll",
+      "priority": "P2",
+      "status": "published",
+      "title": "Payroll schedule and accessing pay stubs",
+      "language": "en",
+      "created_date": "2026-02-03T11:05:17Z",
+      "updated_date": "2026-06-18T09:12:40Z"
+    }
+  },
+  {
+    "content": "To update your direct deposit account, go to 'Payroll > Banking Details' in the employee portal. Changes submitted after the Tuesday before payday take effect on the following pay cycle. For security, you will receive a confirmation email and must verify the change with multi-factor authentication.",
+    "metadata": {
+      "ticket_id": "TKT-00006",
+      "doc_type": "knowledge_base",
+      "category": "payroll",
+      "priority": "P1",
+      "status": "published",
+      "title": "How to change your direct deposit information",
+      "language": "en",
+      "created_date": "2026-02-10T13:47:55Z",
+      "updated_date": "2026-04-22T15:30:10Z"
+    }
+  },
+  {
+    "content": "All employees receive one free pair of SuperGlasses frames with prescription lenses per calendar year, plus 40% off additional purchases. Use your employee discount code from the portal's 'Perks' page at checkout on superglasses.com.",
+    "metadata": {
+      "ticket_id": "TKT-00007",
+      "doc_type": "knowledge_base",
+      "category": "benefits",
+      "priority": "P3",
+      "status": "published",
+      "title": "Employee eyewear discount and annual free pair",
+      "language": "en",
+      "created_date": "2026-01-20T09:00:00Z",
+      "updated_date": "2026-07-01T10:45:12Z"
+    }
+  },
+  {
+    "content": "Open enrollment for health, dental, and vision insurance runs from November 1 to November 30. Review plan options and make elections under 'Benefits > Enrollment'. If you do not make changes, your current elections roll over to next year.",
+    "metadata": {
+      "ticket_id": "TKT-00008",
+      "doc_type": "knowledge_base",
+      "category": "benefits",
+      "priority": "P1",
+      "status": "published",
+      "title": "Benefits open enrollment period",
+      "language": "en",
+      "created_date": "2026-10-01T08:00:00Z",
+      "updated_date": "2026-10-28T17:22:09Z"
+    }
+  },
+  {
+    "content": "To reset your network or email password, visit the self-service password portal at password.superglasses.internal and verify your identity with your registered phone. If you are locked out after 5 failed attempts, contact the IT Help Desk at ext. 4357.",
+    "metadata": {
+      "ticket_id": "TKT-00009",
+      "doc_type": "knowledge_base",
+      "category": "it_support",
+      "priority": "P1",
+      "status": "published",
+      "title": "How to reset your password",
+      "language": "en",
+      "created_date": "2026-01-05T07:55:31Z",
+      "updated_date": "2026-05-14T12:10:02Z"
+    }
+  },
+  {
+    "content": "Remote employees must connect through the company VPN before accessing internal systems such as the order management system or the lens lab dashboard. Install the VPN client from the IT Software Center and sign in with your corporate credentials.",
+    "metadata": {
+      "ticket_id": "TKT-00010",
+      "doc_type": "knowledge_base",
+      "category": "it_support",
+      "priority": "P2",
+      "status": "published",
+      "title": "Connecting to the VPN",
+      "language": "en",
+      "created_date": "2026-02-14T10:20:44Z",
+      "updated_date": "2026-02-20T16:00:18Z"
+    }
+  },
+  {
+    "content": "Report suspicious emails using the 'Report Phishing' button in Outlook. Never click links or open attachments asking for login credentials or customer payment data. If you think you clicked a malicious link, disconnect from the network and contact Security at security@superglasses.internal immediately.",
+    "metadata": {
+      "ticket_id": "TKT-00011",
+      "doc_type": "knowledge_base",
+      "category": "security",
+      "priority": "P1",
+      "status": "published",
+      "title": "How to report a phishing email",
+      "language": "en",
+      "created_date": "2026-03-03T14:02:11Z",
+      "updated_date": "2026-08-09T11:35:27Z"
+    }
+  },
+  {
+    "content": "Customer prescription and health data is protected information. Only access a customer's prescription when needed to fulfill or support their order, never share it over unsecured channels, and never copy it into personal notes or spreadsheets.",
+    "metadata": {
+      "ticket_id": "TKT-00012",
+      "doc_type": "knowledge_base",
+      "category": "security",
+      "priority": "P1",
+      "status": "published",
+      "title": "Handling customer prescription data",
+      "language": "en",
+      "created_date": "2026-01-15T09:30:00Z",
+      "updated_date": "2026-09-01T08:45:50Z"
+    }
+  },
+  {
+    "content": "During your first week, complete the onboarding checklist in the employee portal: sign your offer documents, set up direct deposit, complete security and privacy training, and schedule a 1:1 with your manager. Your laptop will be shipped to your home address 3 business days before your start date.",
+    "metadata": {
+      "ticket_id": "TKT-00013",
+      "doc_type": "knowledge_base",
+      "category": "onboarding",
+      "priority": "P2",
+      "status": "published",
+      "title": "New hire first-week checklist",
+      "language": "en",
+      "created_date": "2026-01-02T12:00:00Z",
+      "updated_date": "2026-07-15T13:18:36Z"
+    }
+  },
+  {
+    "content": "Customers may return frames within 30 days of delivery for a full refund. To process a return, open the order in the order management system, select 'Initiate Return', choose the reason code, and email the prepaid shipping label to the customer. Prescription lenses made to order are refundable only if there is a manufacturing defect.",
+    "metadata": {
+      "ticket_id": "TKT-00014",
+      "doc_type": "knowledge_base",
+      "category": "returns",
+      "priority": "P2",
+      "status": "published",
+      "title": "Processing a customer return",
+      "language": "en",
+      "created_date": "2026-02-25T15:40:09Z",
+      "updated_date": "2026-06-30T10:05:21Z"
+    }
+  },
+  {
+    "content": "If a customer reports a scratched or cracked lens on arrival, ask for a photo, attach it to the order, and issue a free remake using reason code 'DEF-LENS'. Escalate to the lens lab lead if the same order has more than one defect report.",
+    "metadata": {
+      "ticket_id": "TKT-00015",
+      "doc_type": "knowledge_base",
+      "category": "returns",
+      "priority": "P1",
+      "status": "pending",
+      "title": "Handling defective lens complaints",
+      "language": "en",
+      "created_date": "2026-10-10T09:12:48Z",
+      "updated_date": "2026-10-12T14:55:03Z"
+    }
+  },
+  {
+    "content": "Standard shipping takes 7-10 business days, including lens production time. Expedited shipping takes 3-5 business days. To look up tracking, open the order in the order management system and click the carrier tracking number.",
+    "metadata": {
+      "ticket_id": "TKT-00016",
+      "doc_type": "knowledge_base",
+      "category": "shipping",
+      "priority": "P3",
+      "status": "published",
+      "title": "Shipping timelines and order tracking",
+      "language": "en",
+      "created_date": "2026-03-11T10:00:00Z",
+      "updated_date": "2026-03-11T10:00:00Z"
+    }
+  },
+  {
+    "content": "If a package is marked delivered but the customer has not received it, wait 48 hours, then file a carrier claim from the 'Shipping Issues' tab and send a replacement order with reason code 'SHIP-LOST'. Replacements over $300 require supervisor approval.",
+    "metadata": {
+      "ticket_id": "TKT-00017",
+      "doc_type": "knowledge_base",
+      "category": "shipping",
+      "priority": "P2",
+      "status": "published",
+      "title": "Handling lost packages",
+      "language": "en",
+      "created_date": "2026-04-02T16:25:37Z",
+      "updated_date": "2026-05-19T09:40:14Z"
+    }
+  },
+  {
+    "content": "Before an order goes to the lens lab, verify that the uploaded prescription includes sphere, cylinder, axis, and pupillary distance (PD), and that it is signed and less than 2 years old. If information is missing, set the order to 'On Hold - Rx' and email the customer using the 'Rx Missing Info' template.",
+    "metadata": {
+      "ticket_id": "TKT-00018",
+      "doc_type": "knowledge_base",
+      "category": "prescriptions",
+      "priority": "P1",
+      "status": "published",
+      "title": "Verifying a customer prescription",
+      "language": "en",
+      "created_date": "2026-01-28T11:11:11Z",
+      "updated_date": "2026-08-21T15:02:44Z"
+    }
+  },
+  {
+    "content": "Customers who don't know their pupillary distance can use the PD measuring tool on the website, which uses their webcam and a standard credit card for scale. Alternatively, direct them to the printable PD ruler in the Help Center.",
+    "metadata": {
+      "ticket_id": "TKT-00019",
+      "doc_type": "knowledge_base",
+      "category": "prescriptions",
+      "priority": "P3",
+      "status": "draft",
+      "title": "Helping customers measure pupillary distance",
+      "language": "en",
+      "created_date": "2026-10-20T13:33:00Z",
+      "updated_date": "2026-10-22T10:18:29Z"
+    }
+  },
+  {
+    "content": "Customer service agents should respond to live chats within 60 seconds and to emails within 24 hours. Use the approved macros in the help desk tool, and always confirm the order number and customer email before discussing order details.",
+    "metadata": {
+      "ticket_id": "TKT-00020",
+      "doc_type": "knowledge_base",
+      "category": "customer_service",
+      "priority": "P2",
+      "status": "published",
+      "title": "Customer service response time standards",
+      "language": "en",
+      "created_date": "2026-02-01T09:00:00Z",
+      "updated_date": "2026-04-10T11:27:53Z"
+    }
+  },
+  {
+    "content": "Escalate a customer case to a Tier 2 supervisor if the customer requests a manager, the refund exceeds $250, the case involves a possible allergic reaction to frame materials, or the customer mentions legal action. Use the 'Escalate' button in the help desk tool and add a summary note.",
+    "metadata": {
+      "ticket_id": "TKT-00021",
+      "doc_type": "knowledge_base",
+      "category": "customer_service",
+      "priority": "P1",
+      "status": "published",
+      "title": "When to escalate a customer case",
+      "language": "en",
+      "created_date": "2026-03-19T14:48:06Z",
+      "updated_date": "2026-09-05T16:12:30Z"
+    }
+  },
+  {
+    "content": "Submit business expenses such as travel, client meals, and home-office equipment through 'Finance > Expenses' in the employee portal within 30 days of purchase. Attach an itemized receipt for any expense over $25. Approved expenses are reimbursed on the next payroll cycle.",
+    "metadata": {
+      "ticket_id": "TKT-00022",
+      "doc_type": "knowledge_base",
+      "category": "expenses",
+      "priority": "P2",
+      "status": "published",
+      "title": "How to submit an expense report",
+      "language": "en",
+      "created_date": "2026-02-18T10:30:15Z",
+      "updated_date": "2026-02-18T10:30:15Z"
+    }
+  },
+  {
+    "content": "Remote and hybrid employees can receive a one-time home-office stipend of up to $500 for a desk, chair, or monitor. Submit the purchase as an expense with category 'Home Office Stipend' within 90 days of your start date.",
+    "metadata": {
+      "ticket_id": "TKT-00023",
+      "doc_type": "knowledge_base",
+      "category": "remote_work",
+      "priority": "P3",
+      "status": "published",
+      "title": "Home-office stipend for remote employees",
+      "language": "en",
+      "created_date": "2026-04-07T08:44:52Z",
+      "updated_date": "2026-06-02T13:59:01Z"
+    }
+  },
+  {
+    "content": "Performance reviews take place twice a year, in April and October. Complete your self-assessment in the 'Performance' module at least one week before your scheduled review meeting. Managers submit final ratings within two weeks of the meeting.",
+    "metadata": {
+      "ticket_id": "TKT-00024",
+      "doc_type": "knowledge_base",
+      "category": "performance",
+      "priority": "P2",
+      "status": "published",
+      "title": "Performance review cycle",
+      "language": "en",
+      "created_date": "2026-03-01T09:15:00Z",
+      "updated_date": "2026-09-25T10:40:22Z"
+    }
+  },
+  {
+    "content": "Warehouse and lens lab staff must wear safety glasses and nitrile gloves when operating edging and coating machines. Report any injury or near-miss to your shift lead immediately and file an incident report in the portal within 24 hours.",
+    "metadata": {
+      "ticket_id": "TKT-00025",
+      "doc_type": "knowledge_base",
+      "category": "workplace_safety",
+      "priority": "P1",
+      "status": "published",
+      "title": "Lens lab safety requirements",
+      "language": "en",
+      "created_date": "2026-01-22T07:00:00Z",
+      "updated_date": "2026-05-30T08:20:47Z"
+    }
+  },
+  {
+    "content": "Para solicitar vacaciones, inicia sesión en el portal de empleados y envía una solicitud, agregando a tu gerente como aprobador. Las solicitudes deben enviarse con al menos dos semanas de anticipación.",
+    "metadata": {
+      "ticket_id": "TKT-00026",
+      "doc_type": "knowledge_base",
+      "category": "vacations",
+      "priority": "P2",
+      "status": "published",
+      "title": "Cómo solicitar vacaciones",
+      "language": "es",
+      "created_date": "2026-09-16T10:05:00Z",
+      "updated_date": "2026-09-17T12:30:18Z"
+    }
+  },
+  {
+    "content": "The legacy inventory spreadsheet has been retired. All frame stock levels are now managed in the Inventory module of the order management system. Contact the Operations team for access.",
+    "metadata": {
+      "ticket_id": "TKT-00027",
+      "doc_type": "knowledge_base",
+      "category": "operations",
+      "priority": "P3",
+      "status": "archived",
+      "title": "Legacy inventory spreadsheet retirement",
+      "language": "en",
+      "created_date": "2026-01-30T15:00:00Z",
+      "updated_date": "2026-07-31T18:00:00Z"
+    }
+  }
+]
