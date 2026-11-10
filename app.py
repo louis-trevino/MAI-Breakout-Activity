@@ -13,6 +13,7 @@ import streamlit as st
 import config
 from agent.graph import NO_ANSWER, build_graph, renumber_citations, stream_turn, usage_cost
 from agent.retriever import KBRetriever, is_relevant
+from ui_background import BACKGROUNDS, CONTENT_KEY, DEFAULT_BACKGROUND, apply_background
 
 st.set_page_config(page_title="Employee Onboarding Agent", page_icon=":material/badge:")
 
@@ -105,7 +106,7 @@ if "thread_id" not in st.session_state:
 # ---- Sidebar -------------------------------------------------------------------
 with st.sidebar:
     st.header("Onboarding Agent")
-    if st.button("New chat", icon=":material/add:", use_container_width=True):
+    if st.button("New chat", icon=":material/add:", width="stretch"):
         st.session_state.thread_id = str(uuid.uuid4())
         st.session_state.messages = []
         st.rerun()
@@ -116,6 +117,10 @@ with st.sidebar:
                   "query embeddings (text-embedding-3-small) add a negligible amount.")
         st.caption(f"{tin:,} input + {tout:,} output tokens")
     st.caption(f"Model: `{config.OPENAI_MODEL}` (OpenAI)  \nEmbeddings: `{config.EMBEDDING_MODEL}`")
+    background = st.segmented_control(
+        "Background", list(BACKGROUNDS), default=DEFAULT_BACKGROUND, key="background",
+    ) or DEFAULT_BACKGROUND
+apply_background(background)
 
 if not config.OPENAI_API_KEY:
     st.error(
@@ -132,36 +137,39 @@ except Exception as exc:  # e.g. invalid key or no network while embedding the K
 with st.sidebar:
     st.caption(f"{retriever.count()} published knowledge-base entries indexed")
 
-st.title("Employee Onboarding Agent")
-st.caption("Ask anything about the organization. Answers come from the employee knowledge base.")
+# Main content sits in a frosted panel (styled in ui_background) over the landscape.
+panel = st.container(key=CONTENT_KEY)
+with panel:
+    st.title("Employee Onboarding Agent")
+    st.caption("Ask anything about the organization. Answers come from the employee knowledge base.")
 
-# ---- Chat history --------------------------------------------------------------
-for i, msg in enumerate(st.session_state.messages):
-    with st.chat_message(msg["role"]):
-        st.markdown(msg["content"])
-        if msg["role"] == "assistant":
-            render_sources(msg["citations"])
-            if show_debug and msg.get("debug"):
-                render_debug(msg["debug"])
-            st.feedback("thumbs", key=f"fb_{st.session_state.thread_id}_{i}",
-                        on_change=log_feedback, args=(i,))
+    # ---- Chat history ----------------------------------------------------------
+    for i, msg in enumerate(st.session_state.messages):
+        with st.chat_message(msg["role"]):
+            st.markdown(msg["content"])
+            if msg["role"] == "assistant":
+                render_sources(msg["citations"])
+                if show_debug and msg.get("debug"):
+                    render_debug(msg["debug"])
+                st.feedback("thumbs", key=f"fb_{st.session_state.thread_id}_{i}",
+                            on_change=log_feedback, args=(i,))
 
-# ---- Starter questions (empty chat only) ---------------------------------------
-starter = None
-if not st.session_state.messages:
-    st.markdown("**Try asking:**")
-    cols = st.columns(2)
-    for j, q in enumerate(STARTER_QUESTIONS):
-        if cols[j % 2].button(q, key=f"starter_{j}", use_container_width=True):
-            starter = q
+    # ---- Starter questions (empty chat only) -----------------------------------
+    starter = None
+    if not st.session_state.messages:
+        st.markdown("**Try asking:**")
+        cols = st.columns(2)
+        for j, q in enumerate(STARTER_QUESTIONS):
+            if cols[j % 2].button(q, key=f"starter_{j}", width="stretch"):
+                starter = q
 
 # ---- New question --------------------------------------------------------------
 question = st.chat_input("Ask a question about the organization...") or starter
 if question:
     st.session_state.messages.append({"role": "user", "content": question})
-    with st.chat_message("user"):
+    with panel, st.chat_message("user"):
         st.markdown(question)
-    with st.chat_message("assistant"):
+    with panel, st.chat_message("assistant"):
         placeholder = st.empty()
         placeholder.markdown(":gray[Searching the knowledge base…]")
         docs, buf, result = [], "", None
